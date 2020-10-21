@@ -1,0 +1,138 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+.title-contents {
+  width: 100vw;
+  height: 80vh;
+  background-image: image-url('fukuoka01.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+  height: 80vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
+
+/* 商品一覧 */
+
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+
+  align-items: center;
+  padding: 10vh 0;
+  width:  100vw;
+}
+
+.item-contents>.title {
+  font-size: 10vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.item-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-lists>.list {
+  width: 100vw;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.item-img-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-img {
+  width: calc(100vw-30vw);
+  height: 50vh;
+}
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 2.5vh;
+}
+
+.item-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 2vh;
+}
+
+/* //商品一覧 */
