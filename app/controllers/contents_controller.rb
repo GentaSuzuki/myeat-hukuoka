@@ -1,7 +1,7 @@
 class ContentsController < ApplicationController
   before_action :authenticate_user!, except: [:index,:show]
   def index
-    @content = Content.all.order("created_at DESC")
+    @contents = Content.all.order("created_at DESC")
   end
 
   def new
@@ -17,6 +17,9 @@ class ContentsController < ApplicationController
     end
   end
 
+  def show
+    @content = Content.find(params[:id])
+  end
 
   private
 

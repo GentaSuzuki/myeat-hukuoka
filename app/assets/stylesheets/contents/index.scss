@@ -77,7 +77,7 @@ a {
   width: 100vw;
   display: flex;
   align-items: center;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -85,6 +85,8 @@ a {
   width: 100vw;
   padding: 1vw;
   background-color: #FFF;
+  display: flex;
+  justify-content: center;
 }
 
 .item-img-content {
