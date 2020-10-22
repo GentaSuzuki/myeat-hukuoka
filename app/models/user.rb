@@ -12,7 +12,7 @@ class User < ApplicationRecord
           validates :years_old
           end
   
-          has_many :items
-          has_many :orders
+          has_many :contents
+          has_many :comments
 
 end
