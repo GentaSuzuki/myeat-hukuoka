@@ -21,6 +21,13 @@ class ContentsController < ApplicationController
     @content = Content.find(params[:id])
   end
 
+  def edit
+    @content = Content.find(params[:id])
+    if current_user.id != @content.user_id
+      return redirect_to root_path
+    end
+  end
+
   private
 
   def content_params
