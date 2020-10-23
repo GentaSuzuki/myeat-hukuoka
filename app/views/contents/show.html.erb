@@ -38,7 +38,7 @@
       <tbody>
         <tr>
           <th class="detail-item">出品者</th>
-          <td class="detail-value"><%= @content.user.nickname%></td>
+          <td class="detail-value"><%=link_to @content.user.nickname,user_path(@content.user.id), class:"user-show-btn"  %></td>
         </tr>
         <tr>
           <th class="detail-item">ジャンル</th>
