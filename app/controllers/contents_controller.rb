@@ -1,6 +1,6 @@
 class ContentsController < ApplicationController
   before_action :authenticate_user!, except: [:index,:show]
-  before_action :conetnt_find,only: [:show,:edit,:update]
+  before_action :conetnt_find, only: [:show,:edit,:update,:destroy]
   def index
     @contents = Content.all.order("created_at DESC")
   end
@@ -33,6 +33,15 @@ class ContentsController < ApplicationController
       redirect_to root_path
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if current_user.id == @content.user_id
+      @content.destroy
+      redirect_to root_path
+    else
+      render :show
     end
   end
 
