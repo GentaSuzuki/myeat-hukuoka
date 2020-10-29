@@ -13,6 +13,6 @@ class User < ApplicationRecord
           end
   
           has_many :contents
-          has_many :comments
+          has_many :messages
 
 end

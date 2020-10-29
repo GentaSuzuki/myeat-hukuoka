@@ -52,14 +52,6 @@
           <th class="detail-item">町・村・郡</th>
           <td class="detail-value"><%= @content.town.data %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送元の地域</th>
-          <td class="detail-value"><%= "発送元の地域" %></td>
-        <%# </tr>
-        <tr>
-          <th class="detail-item">発送日の目安</th>
-          <td class="detail-value"><%= "発送日の目安" %></td>
-        </tr>
       </tbody>
     </table>
     <div class="option">
@@ -85,7 +77,7 @@
       </p>
       <button type="submit" class="comment-btn">
         <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
+      <%=link_to 'コメントする',messages_new_path%>
       </button>
     </form>
   </div>

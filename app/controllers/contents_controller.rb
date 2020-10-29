@@ -38,7 +38,7 @@ class ContentsController < ApplicationController
 
   def destroy
     if current_user.id == @content.user_id
-      @content.destroy
+    @content.destroy
       redirect_to root_path
     else
       render :show

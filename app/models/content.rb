@@ -6,7 +6,7 @@ class Content < ApplicationRecord
   belongs_to_active_hash :town
   belongs_to_active_hash :price
   belongs_to :user
-  has_many   :comments
+  has_many   :messages
   has_one_attached :image
 
   with_options presence: true do

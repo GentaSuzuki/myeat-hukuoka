@@ -12,7 +12,7 @@ users  テーブル
   Association
 
   - has_many :contents
-  - has_many :comments
+  - has_many :messages
 
   contents テーブル
 
@@ -32,9 +32,9 @@ users  テーブル
   Association
 
 - belongs_to :user
-- has_many :comments
+- has_many :messages
 
-  comments テーブル
+  messages テーブル
 
 
 | Column    | Type      | Option                         |
