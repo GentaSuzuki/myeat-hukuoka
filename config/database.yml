@@ -50,5 +50,7 @@ test:
 production:
   <<: *default
   database: myeat_hukuoka_production
-  username: myeat_hukuoka
-  password: <%= ENV['MYEAT_HUKUOKA_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+  
