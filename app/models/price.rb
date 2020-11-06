@@ -15,6 +15,6 @@ class Price < ActiveHash::Base
     { id: 12, data: '¥10,000~¥14,999' },
     { id: 13, data: '¥15,000~¥19,999' },
     { id: 14, data: '¥20,000~¥29,999' },
-    { id: 15, data: '¥30,000~'}
+    { id: 15, data: '¥30,000~' }
   ]
 end

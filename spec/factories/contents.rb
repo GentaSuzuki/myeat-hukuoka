@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :content do
-    restaurant     {'name'}
+    restaurant     { 'name' }
     genre_id       { 1 }
     city_id        { 1 }
     town_id        { 1 }
