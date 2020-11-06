@@ -16,8 +16,8 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
 
       // ファイル選択ボタンを生成
       const inputHTML = document.createElement('input');
-      inputHTML.setAttribute('id', `item_image_${imageElementNum}`)
-      inputHTML.setAttribute('name', 'item[images][]');
+      inputHTML.setAttribute('id', `content_image_${imageElementNum}`)
+      inputHTML.setAttribute('name', 'content[images][]');
       inputHTML.setAttribute('type', 'file');
 
       // 生成したHTMLの要素をブラウザに表示させる
@@ -33,7 +33,7 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
       })
     }
 
-    document.getElementById('item-image').addEventListener('change', (e) => {
+    document.getElementById('content-image').addEventListener('change', (e) => {
       let file = e.target.files[0];
       let blob = window.URL.createObjectURL(file);
 

@@ -22,7 +22,6 @@ users  テーブル
 | restaurant    | string     | null: false                    |
 | image_id      | integer    | null: false                    | 
 | genre_id      | integer    | null: false                    |
-| prefecture_id | integer    | null: false                    |
 | city_id       | integer    | nill: false                    |
 | town_id       | integer    | nill: false                    |
 | description   | text       |                                |

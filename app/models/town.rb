@@ -1,5 +1,5 @@
 class Town < ActiveHash::Base
-  self.data =[
+  self.data = [
     { id: 0, data: '---' },
     { id: 1, data: '北九州市門司区' },
     { id: 2, data: '洋食・西洋料理' },

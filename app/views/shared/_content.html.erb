@@ -1,5 +1,5 @@
 <div class="image-content">
-  <%= link_to image_tag(content.image, class: :content_image ), content_path(content.id),method: :get, class: :card_image %>
+  <%= link_to image_tag(content.images[0], class: :content_image ), content_path(content.id),method: :get, class: :card_image %>
   <div class="restaurant-content">
     <%= link_to content.restaurant, content_path,method: :get, class: :restaurant_name%>
     <p class="price-content">

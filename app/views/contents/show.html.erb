@@ -7,8 +7,9 @@
       <%= @content.restaurant %>
     </h2>
     <div class='item-img-content'>
-      <%= image_tag @content.image ,class:"item-box-img" %>
-    </div>
+    <% @content.images.each do |image|%>
+      <%= image_tag image ,class:"item-box-img" %>
+      <% end %>
     <div class="item-price-box">
       <span class="item-price">
         <%= @content.price.data%>

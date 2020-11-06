@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2020_10_22_061326) do
     t.bigint "user_id"
     t.string "restaurant"
     t.integer "genre_id"
-    t.integer "prefecture_id"
     t.integer "city_id"
     t.integer "town_id"
     t.text "description"

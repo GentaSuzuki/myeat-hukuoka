@@ -7,15 +7,14 @@ class Content < ApplicationRecord
   belongs_to_active_hash :price
   belongs_to :user
   has_many   :comments
-  has_one_attached :image
+  has_many_attached :images
 
   with_options presence: true do
-    validates :image
+    validates :images
     validates :restaurant
     validates :genre_id, numericality: { other_than: 0 }
     validates :city_id, numericality: { other_than: 0 }
     validates :town_id, numericality: { other_than: 0 }
-    # validates :prefecture_id, numericality: { other_than: 0 }
     validates :price_id, numericality: { other_than: 0 }
   end
 end
