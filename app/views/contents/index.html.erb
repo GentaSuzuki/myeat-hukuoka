@@ -17,9 +17,8 @@
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
   <%# 商品一覧 %>
+<h2 class='title'>新規投稿一覧</h2>
   <div class='item-contents'>
-    <%# <h2 class='title'>新規投稿一覧</h2>
-    <%= link_to '新規投稿一覧', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
       <% @contents.each do |content|%>
@@ -37,9 +36,6 @@
           </h3>
           <div class='item-price'>
             <span><%= content.price.data %>円<br></span>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
             </div>
           </div>
         </div>
@@ -61,7 +57,7 @@
           <div class='item-price'>
             <span>価格帯<br></span>
             <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
+              <%= image_tag "star.png", class:"star-icon", id:"star" %>
               <span class='star-count'>0</span>
             </div>
           </div>
@@ -71,7 +67,7 @@
       <% end %>
       <%# //商品がある場合は表示されないようにしましょう %>
       <%# /商品がない場合のダミー %>
-    </ul>
+  </ul>
   </div>
   <%# /商品一覧 %>
 </div>
