@@ -1,7 +1,7 @@
 class Price < ActiveHash::Base
   self.data = [
     { id: 0, data: '---' },
-    { id: 1, data: '¥0~¥500' },
+    { id: 1, data: '¥0~¥499' },
     { id: 2, data: '¥500~¥999' },
     { id: 3, data: '¥1,000~¥1,999' },
     { id: 4, data: '¥2,000~¥2,999' },

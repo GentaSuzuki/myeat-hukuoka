@@ -11,9 +11,93 @@
   </div>
   <div class='nav'>
     <ul class='lists-left'>
-      <li><%= link_to 'ジャンル', "#", class: "genre-list" %></li>
-      <li><%= link_to '価格帯', "#", class: "price-list" %></li>
-      <li><%= link_to '県一覧',"#", class: "prefecture-list" %></li>
+      <%# <li><%= link_to 'ジャンル', "#", class: "genre-list" %>
+<li class=genre-list>
+<select name="genre">
+        <option value=”genre”>ジャンル</option>
+        <option value=”wa”>和食</option>
+        <option value=”sei”>洋食・西洋料理</option>
+        <option value=”tyu”>中華料理</option>
+        <option value=”asia”>アジア・エスニック</option>
+        <option value=”meet”>焼肉</option>
+        <option value=”nabe”>鍋</option>
+        <option value=”ramen”>ラーメン</option>
+        <option value=”bread”>パン・サンドイッチ</option>
+        <option value=”cafe”>カフェ</option>
+        <option value=”sweet”>スイーツ</option>
+        </select>
+        </li>
+<li class="price-list">        
+        <select name=”price”>
+        <option value=”a”>価格帯</option>
+        <option value=”ab”>¥0~499</option>
+        <option value=”abc”>¥499~999</option>
+        <option value=”abcd”>¥1,000~1,999</option>
+        <option value=”abcde”>¥2,000~2,999</option>
+        <option value=”d”>¥3,000~3,999</option>
+        <option value=”df”>¥4,000~4,999</option>
+        <option value=”dfg”>¥5,000~5,999</option>
+        <option value=”dfgh”>¥6,000~6,999</option>
+        <option value=”w”>¥7,000~7,999</option>
+        <option value=”we”>¥8,000~8,999</option>
+        <option value=”wer”>¥9,000~9,999</option>
+        <option value=”z”>¥10,000~19,999</option>
+        <option value=”zx”>¥20,000~29,999</option>
+        <option value=”zxc”>¥30,000~</option>
+        </select>
+        </li>
+<li class="prefecture-list">
+        <select name="prefecture">
+        <option value="">県一覧</option>
+        <option value=”feb”>北海道</option>
+        <option value=”mar”>青森県</option>
+        <option value=”apr”>岩手県</option>
+        <option value=”may”>宮城県</option>
+        <option value=”jun”>秋田県</option>
+        <option value=”jul”>山形県</option>
+        <option value=”aug”>福島県</option>
+        <option value=”sep”>茨城県</option>
+        <option value=”oct”>栃木県</option>
+        <option value=”nov”>群馬県</option>
+        <option value=”dec”>埼玉県</option>
+        <option value=”dfgh”>千葉県</option>
+        <option value=”w”>東京都</option>
+        <option value=”we”>神奈川県</option>
+        <option value=”wer”>新潟県</option>
+        <option value=”dfgh”>富山県</option>
+        <option value=”w”>石川県</option>
+        <option value=”we”>福井県</option>
+        <option value=”wer”>山梨県</option>
+        <option value=”dfgh”>長野県</option>
+        <option value=”w”>岐阜県</option>
+        <option value="we">静岡県</option>
+        <option value=”wer”>愛知県</option>
+        <option value=”dfgh”>三重県</option>
+        <option value=”w”>滋賀県</option>
+        <option value=”we”>京都府</option>
+        <option value=”wer”>大阪府</option>
+        <option value=”dfgh”>兵庫県</option>
+        <option value=”w”>奈良県</option>
+        <option value=”we”>和歌山</option>
+        <option value=”wer”>鳥取県</option>
+        <option value=”dfgh”>島根県</option>
+        <option value=”w”>岡山県</option>
+        <option value=”we”>広島県</option>
+        <option value=”wer”>山口県</option>
+        <option value=”dfgh”>徳島県</option>
+        <option value=”w”>香川県</option>
+        <option value=”we”>愛媛県</option>
+        <option value=”wer”>高知県</option>
+        <option value=”w”>福岡県</option>
+        <option value=”we”>佐賀県</option>
+        <option value=”wer”>長崎県</option>
+        <option value=”dfgh”>熊本県</option>
+        <option value=”w”>大分県</option>
+        <option value=”we”>宮崎県</option>
+        <option value=”wer”>鹿児島県</option>
+        <option value=”w”>沖縄県</option>
+        </select>
+      </li>
     </ul>
     <ul class='lists-right'>
       <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>

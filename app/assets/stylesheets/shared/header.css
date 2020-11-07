@@ -57,6 +57,7 @@
 .lists-left {
   display: flex;
   min-width: 200px;
+  
 }
 
 .genre-list {
@@ -69,6 +70,7 @@
   text-decoration: none;
   color: #333333;
   margin-right: 40px;
+  margin-left: 5px;
 }
 
 .prefecture-list{
@@ -107,3 +109,4 @@
   text-decoration: none;
   color: #333333;
 }
+
