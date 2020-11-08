@@ -6,7 +6,6 @@ a {
   background: #f8f8f8;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   height: 80vh;
@@ -47,9 +46,7 @@ a {
   height: 9vh;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
-
-/* 商品一覧 */
+/* 投稿一覧 */
 
 .item-contents {
   background-color: #FFF;
@@ -57,20 +54,6 @@ a {
   align-items: center;
   padding: 10vh 0;
   width:  100vw;
-}
-
-.item-contents>.title {
-  font-size: 10vh;
-  line-height: 1.4;
-  font-weight: bold;
-}
-
-.item-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
-  font-weight: bold;
 }
 
 .item-lists {
@@ -81,16 +64,7 @@ a {
   justify-content: center;
 }
 
-.item-lists>.list {
-  width: 100vw;
-  padding: 1vw;
-  background-color: #FFF;
-  display: flex;
-  justify-content: center;
-}
-
 .item-img-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,11 +84,13 @@ a {
 }
 
 .item-name {
-  font-size: 2.5vh;
+  font-size: 5vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .item-price {
-  font-size: 1.5vh;
+  font-size: 5vh;
   display: flex;
   justify-content: space-between;
 }
@@ -135,4 +111,13 @@ a {
   font-size: 2vh;
 }
 
-/* //商品一覧 */
+.title{
+  font-size: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-bottom:solid 5px aqua;
+  padding: 5px;
+  background-color: white;
+
+}

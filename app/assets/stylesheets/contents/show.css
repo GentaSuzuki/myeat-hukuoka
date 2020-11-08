@@ -49,10 +49,25 @@
   font-size: 16px;
 }
 
+.edit-btn{
+  display: flex;
+  justify-content: center;
+}
 
 .item-red-btn {
   text-align: center;
   background-color: #ea352d;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  margin: 20px 0px;
+  padding: 1vh 10vw;
+  width: calc((100vw - 50vw)/2);
+}
+
+.item-blue-btn {
+  text-align: center;
+  background-color: blue;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
