@@ -18,15 +18,16 @@
         (税込) 送料込み
       </span>
     </div>
-
+<div class="edit-btn">
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
   <% if user_signed_in? && @content.user_id == current_user.id%>
     <%= link_to '商品の編集', edit_content_path, method: :get, class: "item-red-btn" %>
     <p class='or-text'>or</p>
     <%= link_to '削除', content_path, method: :delete, class:'item-destroy' %>
 <% end %>
+</div>
     <%# 商品が売れていない場合はこちらを表示しましょう %>
-    <%= link_to '予約画面に進む', "#" ,class:"item-red-btn"%>
+    <%= link_to '予約画面に進む', "#" ,class:"item-blue-btn"%>
     <%# //商品が売れていない場合はこちらを表示しましょう %>
 
 
@@ -53,21 +54,9 @@
           <th class="detail-item">町・村・郡</th>
           <td class="detail-value"><%= @content.town.data %></td>
         </tr>
-        <tr>
-          <%# <th class="detail-item">発送元の地域</th>
-          <td class="detail-value"><%= "発送元の地域" %></td>
-        <%# </tr>
-        <tr>
-          <th class="detail-item">発送日の目安</th>
-          <td class="detail-value"><%= "発送日の目安" %></td>
-        </tr>
       </tbody>
     </table>
     <div class="option">
-      <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <span>お気に入り 0</span>
-      </div>
       <div class="report-btn">
         <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
         <span>不適切な商品の通報</span>
@@ -75,21 +64,34 @@
     </div>
   </div>
   <%# /商品の概要 %>
-
-  <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
       <p class="comment-warn">
         相手のことを考え丁寧なコメントを心がけましょう。
         <br>
         不快な言葉遣いなどは利用制限や退会処分となることがあります。
       </p>
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
-      </button>
-    </form>
-  </div>
+    <div class="content__comments">
+      <% if current_user %>
+          <%= form_with(model: [@content, @comment], local: true) do |f| %>
+            <div class="field">
+            レビューを書く
+              <%= f.text_field :text %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信する", class: :comment_btn  %>
+            </div>
+          <% end %>
+          <% end %>
+        <ul class="comments_lists">
+          <% if @comments %>
+            <% @comments.each do |comment| %>
+              <li class="comments_list">
+                  <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
+                  <%= comment.text %>
+              <% end %>
+              </li>
+          <% end %>
+        </ul>
+    </div>
   <div class="links">
     <a href="#" class="change-item-btn">
       ＜ 前の商品
