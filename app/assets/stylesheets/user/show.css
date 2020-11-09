@@ -4,20 +4,21 @@
 .table{
   border-collapse: collapse;
   margin-bottom: 32px;
-  width: 50%;
+  width: 30%;
+  text-align: center;
 }
 .table__col1{
   text-align: left;
   font-weight: bold;
   background: #fafafa;
   border-collapse: collapse;
-  border: 1px solid red;
+  border: 4px solid red;
   width: 30%;
   padding: 8px;
 }
 .table__col2{
   text-align: left;
-  border: 1px solid red;
+  border: 4px solid red;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
@@ -42,4 +43,7 @@
 
 .price_name{
   color: black;
+}
+.page-heading{
+  font-size:30px;
 }

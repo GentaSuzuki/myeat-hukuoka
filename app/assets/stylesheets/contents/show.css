@@ -179,24 +179,6 @@
   color: #3CCACE;
 }
 
-.another-item {
-  display: block;
-  margin: 30px 0px 8px;
-  color: #3CCACE;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 23px;
-}
-
-
-
-.btn_count_up {
-  font-size: 36px;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
-}
-
 .actions{
   display: flex;
   justify-content: center;
@@ -211,9 +193,6 @@
 
 .comments_lists{
   padding-left: 20px;
-}
-
-.comments_list{
   list-style-type: square;
   padding-bottom: 5px;
 }
