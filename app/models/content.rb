@@ -12,9 +12,9 @@ class Content < ApplicationRecord
   with_options presence: true do
     validates :images
     validates :restaurant
-    validates :genre_id, numericality: { other_than: 0 }
-    validates :city_id, numericality: { other_than: 0 }
-    validates :town_id, numericality: { other_than: 0 }
-    validates :price_id, numericality: { other_than: 0 }
+    validates :genre_id, numericality: { other_than: 0, message: "は---以外を選択してください" }
+    validates :city_id, numericality: { other_than: 0, message: "は---以外を選択してください" }
+    validates :town_id, numericality: { other_than: 0, message: "は---以外を選択してください"  }
+    validates :price_id, numericality: { other_than: 0, message: "は---以外を選択してください" }
   end
 end

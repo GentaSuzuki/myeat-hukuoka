@@ -1,0 +1,14 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       email: メールアドレス
+       years_old: 生年月日
+     content:
+       images: 画像
+       restaurant: 店名
+       genre_id: ジャンル
+       city_id: 住所(市区)
+       town_id: 住所(町村)
+       price_id: 予算

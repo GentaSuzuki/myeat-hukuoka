@@ -80,19 +80,17 @@ a {
   color: black;
   padding: 1vw;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .item-name {
-  font-size: 5vh;
+  font-size: 4vh;
   display: flex;
   justify-content: space-between;
 }
 
 .item-price {
-  font-size: 5vh;
-  display: flex;
-  justify-content: space-between;
+  font-size: 3vh;
 }
 
 
