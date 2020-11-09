@@ -52,6 +52,8 @@
 .edit-btn{
   display: flex;
   justify-content: center;
+  text-align: center;
+  height: 30vh;
 }
 
 .item-red-btn {
@@ -61,8 +63,25 @@
   font-weight: bold;
   color: #FFF;
   margin: 20px 0px;
-  padding: 1vh 10vw;
-  width: calc((100vw - 50vw)/2);
+  padding: 3vh 1vw;
+  width: calc((100vw - 80vw)/2);
+  height: calc((100vw - 80vw)/2);
+}
+
+.or-text {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.item-destroy {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin: 20px 0px;
+  padding: 3vh 1vw;
+  width: calc((100vw - 80vw)/2);
+  height: calc((100vw - 80vw)/2);
 }
 
 .item-blue-btn {
@@ -71,19 +90,6 @@
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
-}
-
-.or-text {
-  font-size: 20px;
-}
-
-.item-destroy {
-  background-color: lightgray;
-  text-align: center;
-  font-size: 24px;
-  color: black;
   margin: 20px 0px;
   padding: 2vh 10vw;
 }
@@ -116,24 +122,8 @@
 .option {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
-.favorite-btn {
-  border-radius: 40px;
-  width: 15vw;
-  min-width: 200px;
-  color: rgb(249, 75, 0);
-  border: 2px solid #ffb340;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.favorite-star-icon {
-  margin-right: 5px;
-}
 
 .report-btn {
   border-radius: 40px;
@@ -198,26 +188,13 @@
   font-size: 23px;
 }
 
-.star_count {
-  background-color: #093;
-  color: #FFF;
-  font-size: 72px;
-  border-radius: 10px;
-  padding: 20px;
-  display: table-cell;
-}
+
 
 .btn_count_up {
   font-size: 36px;
   border-radius: 10px;
   padding: 10px;
   margin-top: 10px;
-}
-
-.star{
- background-color: white;
- border: none;
- margin-left: 10px;
 }
 
 .actions{

@@ -18,17 +18,15 @@
         (税込) 送料込み
       </span>
     </div>
-<div class="edit-btn">
+ <div class="edit-btn">
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
-  <% if user_signed_in? && @content.user_id == current_user.id%>
+   <% if user_signed_in? && @content.user_id == current_user.id%>
     <%= link_to '商品の編集', edit_content_path, method: :get, class: "item-red-btn" %>
     <p class='or-text'>or</p>
     <%= link_to '削除', content_path, method: :delete, class:'item-destroy' %>
-<% end %>
-</div>
-    <%# 商品が売れていない場合はこちらを表示しましょう %>
+   <% end %>
+   </div>
     <%= link_to '予約画面に進む', "#" ,class:"item-blue-btn"%>
-    <%# //商品が売れていない場合はこちらを表示しましょう %>
 
 
     <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
@@ -100,7 +98,6 @@
       後ろの商品 ＞
     </a>
   </div>
-  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>をもっと見る</a>
 </div>
 
 <%= render "shared/footer" %>

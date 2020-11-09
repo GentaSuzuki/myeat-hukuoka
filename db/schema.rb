@@ -56,15 +56,6 @@ ActiveRecord::Schema.define(version: 2020_11_07_163201) do
     t.index ["user_id"], name: "index_contents_on_user_id"
   end
 
-  create_table "stars", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "user_id"
-    t.bigint "content_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["content_id"], name: "index_stars_on_content_id"
-    t.index ["user_id"], name: "index_stars_on_user_id"
-  end
-
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "email", default: "", null: false
@@ -83,6 +74,4 @@ ActiveRecord::Schema.define(version: 2020_11_07_163201) do
   add_foreign_key "comments", "contents"
   add_foreign_key "comments", "users"
   add_foreign_key "contents", "users"
-  add_foreign_key "stars", "contents"
-  add_foreign_key "stars", "users"
 end
