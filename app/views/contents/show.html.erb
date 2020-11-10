@@ -18,14 +18,14 @@
         (税込) 送料込み
       </span>
     </div>
- <div class="edit-btn">
     <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
    <% if user_signed_in? && @content.user_id == current_user.id%>
+   <div class="edit-btn">
     <%= link_to '商品の編集', edit_content_path, method: :get, class: "item-red-btn" %>
     <p class='or-text'>or</p>
     <%= link_to '削除', content_path, method: :delete, class:'item-destroy' %>
+    </div>
    <% end %>
-   </div>
     <%= link_to '予約画面に進む', "#" ,class:"item-blue-btn"%>
 
 
@@ -45,12 +45,16 @@
           <td class="detail-value"><%= @content.genre.data %></td>
         </tr>
         <tr>
-          <th class="detail-item">市・区</th>
+          <th class="detail-item">地区</th>
           <td class="detail-value"><%= @content.city.data %></td>
         </tr>
         <tr>
-          <th class="detail-item">町・村・郡</th>
+          <th class="detail-item">市町</th>
           <td class="detail-value"><%= @content.town.data %></td>
+        </tr>
+         <tr>
+          <th class="detail-item">区、番地</th>
+          <td class="detail-value"><%= @content.house_number %></td>
         </tr>
       </tbody>
     </table>

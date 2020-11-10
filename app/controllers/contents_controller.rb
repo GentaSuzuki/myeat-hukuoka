@@ -48,7 +48,7 @@ class ContentsController < ApplicationController
   private
 
   def content_params
-    params.require(:content).permit(:restaurant, :genre_id, :city_id, :town_id, :price_id, :house_number, images: []).merge(user_id: current_user.id)
+    params.require(:content).permit(:restaurant, :description, :genre_id, :city_id, :town_id, :price_id, :house_number, images: []).merge(user_id: current_user.id)
   end
 
   def conetnt_find

@@ -10,40 +10,40 @@ RSpec.describe Content, type: :model do
       expect(@content).to be_valid
     end
 
-    it '店名画像が一枚つけることが必須であること' do
-      @content.image = nil
+    it '店名画像が一枚以上つけることが必須であること' do
+      @content.images = nil
       @content.valid?
-      expect(@content.errors.full_messages).to include("Image can't be blank")
+      expect(@content.errors.full_messages).to include("画像を入力してください")
     end
 
     it 'お店の名前が必須であること' do
       @content.restaurant = nil
       @content.valid?
-      expect(@content.errors.full_messages).to include("Restaurant can't be blank")
+      expect(@content.errors.full_messages).to include("店名を入力してください")
     end
 
     it 'ジャンルの指定が必須であること' do
       @content.genre_id = 0
       @content.valid?
-      expect(@content.errors.full_messages).to include('Genre must be other than 0')
+      expect(@content.errors.full_messages).to include('ジャンルは---以外を選択してください')
     end
 
-    it '市、区の指定が必須であること' do
+    it '地区の指定が必須であること' do
       @content.city_id = 0
       @content.valid?
-      expect(@content.errors.full_messages).to include('City must be other than 0')
+      expect(@content.errors.full_messages).to include('住所(地区)は---以外を選択してください')
     end
 
-    it '町村の指定が必須であること' do
+    it '市町の指定が必須であること' do
       @content.town_id = 0
       @content.valid?
-      expect(@content.errors.full_messages).to include('Town must be other than 0')
+      expect(@content.errors.full_messages).to include('住所(市町)は---以外を選択してください')
     end
 
     it '価格帯の指定があること' do
       @content.price_id = 0
       @content.valid?
-      expect(@content.errors.full_messages).to include('Price must be other than 0')
+      expect(@content.errors.full_messages).to include('予算は---以外を選択してください')
     end
   end
 end
