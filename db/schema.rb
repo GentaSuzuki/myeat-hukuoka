@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_11_07_163201) do
     t.integer "city_id"
     t.integer "town_id"
     t.text "description"
+    t.string "house_number"
     t.integer "price_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

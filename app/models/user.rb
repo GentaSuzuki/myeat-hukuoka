@@ -11,6 +11,6 @@ class User < ApplicationRecord
     validates :years_old
   end
 
-  has_many :contents
+  has_many :contents 
   has_many :comments
 end

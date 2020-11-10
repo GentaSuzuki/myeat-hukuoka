@@ -7,6 +7,7 @@ class CreateContents < ActiveRecord::Migration[6.0]
       t.integer    :city_id,       nill:false
       t.integer    :town_id,       nill:false
       t.text       :description
+      t.string     :house_number,  nill:false
       t.integer    :price_id,      nill:false
       t.timestamps
     end

@@ -9,6 +9,6 @@ ja:
        images: 画像
        restaurant: 店名
        genre_id: ジャンル
-       city_id: 住所(市区)
-       town_id: 住所(町村)
+       city_id: 住所(地区)
+       town_id: 住所(市町)
        price_id: 予算

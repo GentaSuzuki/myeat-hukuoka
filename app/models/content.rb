@@ -1,13 +1,12 @@
 class Content < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to_active_hash :genre
-  belongs_to_active_hash :prefecture
   belongs_to_active_hash :city
   belongs_to_active_hash :town
   belongs_to_active_hash :price
   belongs_to :user
-  has_many   :comments
-  has_many_attached :images
+  has_many   :comments , dependent: :destroy
+  has_many_attached :images, dependent: :destroy
 
   with_options presence: true do
     validates :images
