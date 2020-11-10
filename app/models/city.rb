@@ -5,5 +5,5 @@ class City < ActiveHash::Base
     { id: 2, data: '筑豊地区' },
     { id: 3, data: '福岡地区' },
     { id: 4, data: '筑後地区' }
-]
+  ]
 end

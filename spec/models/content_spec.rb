@@ -13,13 +13,13 @@ RSpec.describe Content, type: :model do
     it '店名画像が一枚以上つけることが必須であること' do
       @content.images = nil
       @content.valid?
-      expect(@content.errors.full_messages).to include("画像を入力してください")
+      expect(@content.errors.full_messages).to include('画像を入力してください')
     end
 
     it 'お店の名前が必須であること' do
       @content.restaurant = nil
       @content.valid?
-      expect(@content.errors.full_messages).to include("店名を入力してください")
+      expect(@content.errors.full_messages).to include('店名を入力してください')
     end
 
     it 'ジャンルの指定が必須であること' do
