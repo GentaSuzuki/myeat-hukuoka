@@ -19,11 +19,6 @@
   align-items: center;
 }
 
-.content-image{
-  width: 50vw;
-  height: 50vh;
-}
-
 .item-explain-box{
   display: flex;
   justify-content: center;
