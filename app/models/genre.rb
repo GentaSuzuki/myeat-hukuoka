@@ -5,7 +5,7 @@ class Genre < ActiveHash::Base
     { id: 2, data: '洋食・西洋料理' },
     { id: 3, data: '中華料理' },
     { id: 4, data: 'アジア・エスニック' },
-    { id: 5, data: 'カレー'}
+    { id: 5, data: 'カレー'},
     { id: 6, data: '焼肉' },
     { id: 7, data: '鍋' },
     { id: 8, data: 'ラーメン' },
