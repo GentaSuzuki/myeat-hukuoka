@@ -57,8 +57,8 @@ a {
 }
 
 .item-img {
-  width: calc(100vw-30vw);
-  height: 50vh;
+  width: calc((100vw - 30vw)/3);
+  height: calc(50vh - 10vh);
   margin:5px;
 }
 
