@@ -81,8 +81,11 @@ users  テーブル
 
 ###### 機能gif
   [新規登録](https://i.gyazo.com/c2cacaaf0c6c439eb9a7aaef43aa1d28.gif)
-  [新規投稿](https://i.gyazo.com/ea71ae1b1ae211901f1a944f865b710f.gif)
-
+  [新規投稿・プレビュー機能・複数枚投稿機能](https://i.gyazo.com/ea71ae1b1ae211901f1a944f865b710f.gif)
+  [投稿編集](https://i.gyazo.com/1bbe6b17acc7cfa9a47184e97649a92b.gif)
+  [投稿削除](https://i.gyazo.com/694c62ac7e463d65b1894e4a257769b2.gif)
+  [エラーメッセージ日本語化](https://i.gyazo.com/f2452d2a1fc3bdd789a70e62b9557797.gif)
+  [お気に入り機能](https://i.gyazo.com/c3c7abe841c5d516a61d69883f1e932c.gif)
 
 | 実装予定機能   |
 | ------------ |
