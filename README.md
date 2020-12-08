@@ -35,6 +35,7 @@
   [投稿編集](https://i.gyazo.com/1bbe6b17acc7cfa9a47184e97649a92b.gif)
   [投稿削除](https://i.gyazo.com/694c62ac7e463d65b1894e4a257769b2.gif)
   [エラーメッセージ日本語化](https://i.gyazo.com/f2452d2a1fc3bdd789a70e62b9557797.gif)
+  [ユーザー詳細機能](https://i.gyazo.com/25fa8398972f2e4154a84cb84f6e4050.gif)
   
   ###### ビュー崩れが起きてしまうためまだ組み込めていない
   [お気に入り機能](https://i.gyazo.com/c3c7abe841c5d516a61d69883f1e932c.gif)
